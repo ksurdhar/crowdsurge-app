@@ -1,0 +1,10 @@
+<h2>Event: <%=@ticket.event %></h2>
+<p>Description: <%= @ticket.description %></p>
+<p><%= @ticket.user.username %> is going to this event!</p>
+
+
+<% if current_user.id == @ticket.user_id %>
+  <%= link_to "Edit Ticket", edit_ticket_url(@ticket) %>
+<% end %>
+
+<%= link_to "Tickets", tickets_url %>

@@ -1,0 +1,14 @@
+<h1>Tickets</h1>
+
+<ul>
+  <% @tickets.each do |ticket|%>
+    <li>
+      <%= link_to ticket.event, ticket_url(ticket) %>
+      <% if current_user.id == ticket.user_id %>
+        <%= button_to "Delete Ticket", ticket_url(ticket), method: :delete %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Ticket", new_ticket_url %>

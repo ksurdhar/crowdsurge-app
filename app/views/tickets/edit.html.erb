@@ -1,0 +1,21 @@
+<h2>Edit Ticket</h2>
+
+<%= render "layouts/errors" %>
+
+<form action="<%= ticket_url(@ticket) %>" method="post">
+  <%= auth_token_input %>
+  <input type="hidden" name="_method" value="put">
+
+  <label>
+    Event
+    <input type="text" name="ticket[event]" value="<%= @ticket.event %>" id="title">
+  </label>
+
+  <label>
+    Description
+    <input type="text" name="ticket[description]" value="<%= @ticket.description %>" id="url">
+  </label>
+
+  <input type="submit" value="Update Ticket">
+</form>
+
