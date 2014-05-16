@@ -1,4 +1,4 @@
-== Crowdsurge Ticketapp
+# H1 Crowdsurge Ticketapp
 
 1. run bundle install
 2. rake db:create
@@ -8,7 +8,7 @@ And that should be all! The seed file is already populated with tickets.
 
 Test the rspec tests with rake! 
 
-Other Documentation: 
+# H4 Other Documentation: 
 The app is a fairly barebones RESTful rails app. 
 Users can sign up or sign in and create tickets to events. 
 The only additional gems I added were rspec and capybara for testing. 
