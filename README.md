@@ -1,4 +1,4 @@
-# Crowdsurge Ticketapp
+# CrowdSurge Ticket App
 
 1. run bundle install
 2. rake db:create
